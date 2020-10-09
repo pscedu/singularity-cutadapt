@@ -1,0 +1,11 @@
+#!/bin/bash
+
+if [ ! $(command -v singularity) ]; then
+	module load singularity/3.6.3
+fi
+
+VERSION=2.10
+DIRECTORY=/opt/packages/cutadapt/$VERSION
+
+singularity exec -B /pylon5 $DIRECTORY/singularity-cutadapt-$VERSION.sif cutadapt "$@"
+
