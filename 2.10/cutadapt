@@ -1,17 +1,12 @@
 #!/bin/bash
 
 if [ ! $(command -v singularity) ]; then
-	module load singularity/3.6.3
+	module load singularity
 fi
-
-VERSION=2.10
-DIRECTORY=/opt/packages/cutadapt/$VERSION
-
-singularity exec -B /pylon5 $DIRECTORY/singularity-cutadapt-$VERSION.sif cutadapt "$@"
 
 VERSION=2.10
 PACKAGE=cutadapt
 TOOL=$PACKAGE
 DIRECTORY=/opt/packages/$PACKAGE/$VERSION
 
-singularity exec -B /pylon5 $DIRECTORY/singularity-$PACKAGE-$VERSION.sif $TOOL "$@"
+singularity exec -B /ocean $DIRECTORY/singularity-$PACKAGE-$VERSION.sif $TOOL "$@"
