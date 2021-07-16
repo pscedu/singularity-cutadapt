@@ -5,7 +5,7 @@
 ![License](https://img.shields.io/github/license/pscedu/singularity-cutadapt)
 
 # singularity-cutadapt
-Singularity recipe for [cutadapt](https://github.com/sandialabs/cutadapt).
+Singularity recipe for [cutadapt](https://cutadapt.readthedocs.io/en/stable).
 
 ## Installing the container on Bridges 2
 Copy the
