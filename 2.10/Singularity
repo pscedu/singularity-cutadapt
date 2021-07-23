@@ -8,8 +8,3 @@ From: quay.io/biocontainers/cutadapt:2.10--py37hf01694f_1
     REPOSITORY https://github.com/pscedu/singularity-cutadapt
     COPYRIGHT Copyright © 2021 Pittsburgh Supercomputing Center. All Rights Reserved.
     VERSION 2.10
-
-%post
-   rm /etc/resolv.conf
-
-####################################################################################
